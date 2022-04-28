@@ -8,7 +8,7 @@ pipeline {
             steps{
                 checkout([$class: 'GitSCM', branches: [[name: '*/service-registry']], extensions: [], userRemoteConfigs: [[credentialsId: '1e5856bd-bc08-48c6-ae95-759034743a48', url: 'https://github.com/jbali12/microservice.git']]])                
                 sh "mvn clean install"
-                sh "mvn spring-boot:run"
+               
 
             }
         }
