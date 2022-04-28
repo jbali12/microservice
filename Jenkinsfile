@@ -17,7 +17,7 @@ pipeline {
         stage('build Docker Image'){
             steps{
                 script {
-                    sh 'docker build -t jbalialoui/api-gateway .'
+                    sh 'docker build -t jbalialoui/microservice .'
 
                 }
                 
@@ -32,7 +32,7 @@ pipeline {
                         sh 'docker login -u jbalialoui -p ${dockerhubpwd}'
                     }
                     
-                    sh 'docker push jbalialoui/api-gateway'
+                    sh 'docker push jbalialoui/microservice'
 
                 }
             }
