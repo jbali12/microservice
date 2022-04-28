@@ -8,7 +8,7 @@ pipeline {
             steps{
                 checkout([$class: 'GitSCM', branches: [[name: '*/microservice-ui']], extensions: [], userRemoteConfigs: [[credentialsId: '1e5856bd-bc08-48c6-ae95-759034743a48', url: 'https://github.com/jbali12/microservice.git']]])
                 sh "npm install"
-                sh "ng s --port 3000 --open"
+               
 
             }
         }
