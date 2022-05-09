@@ -20,7 +20,7 @@ RUN npm run build --prod
 FROM nginx:latest
 
 # Copy the build output to replace the default nginx contents.
-COPY --from=node /usr/local/app/dist/microservice-ui /usr/share/nginx/html
+COPY --from=node /app/dist/microservice-ui /usr/share/nginx/html
 
 
 
