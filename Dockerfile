@@ -17,4 +17,4 @@ RUN npm run build
 # Expose port 3000
 EXPOSE 3000
 
-ENTRYPOINT ["ng", "start" ]
+ENTRYPOINT ["npm", "start" ]
