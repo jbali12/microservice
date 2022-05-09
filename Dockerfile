@@ -27,3 +27,5 @@ COPY --from=node /app/dist/microservice-ui /usr/share/nginx/html
 # Expose port 3000
 EXPOSE 3000
 
+
+ENTRYPOINT ["ng","s","--port","3000","--open"]
