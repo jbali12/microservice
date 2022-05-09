@@ -3,10 +3,9 @@
 # Use official node image as the base image
 FROM node:16.8
 # Set the working directory
-WORKDIR /usr/local/app
+WORKDIR /app
 
-# Add the source code to app
-COPY ./ /usr/local/app/
+COPY . .
 
 # Install all the dependencies
 RUN npm install
