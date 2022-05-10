@@ -7,7 +7,7 @@ FROM adoptopenjdk/openjdk11:alpine-jre
 COPY target/*.jar /appPS.jar
 
 
-ENTRYPOINT ["java","-jar", "appPS.jar"]
+
 
 EXPOSE 8081
 
