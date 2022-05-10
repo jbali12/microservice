@@ -1,6 +1,6 @@
 FROM adoptopenjdk/openjdk11:alpine-jre
 
-EXPOSE 8082
+EXPOSE 8080
 
 
 
