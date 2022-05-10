@@ -11,4 +11,4 @@ ENTRYPOINT ["java","-jar", "appPS.jar"]
 
 WORKDIR target/ 
 
-CMD ["java","-jar", "product-service-0.0.1-SNAPSHOT.jar"]
+CMD ["java","-jar", "product-service-0.0.1-SNAPSHOT.jar", "--server.port=8081"]
