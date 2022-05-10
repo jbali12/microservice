@@ -7,4 +7,6 @@ EXPOSE 8761
 COPY target/*.jar /appSR.jar
 
 
-ENTRYPOINT ["mvn" ,"spring-boot:run"]
+ENTRYPOINT ["java" ,"-jar", "appSR.jar"]
+
+CMD ["mvn", "spring-boot:run"]
