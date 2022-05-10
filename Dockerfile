@@ -9,6 +9,6 @@ COPY target/*.jar /appPS.jar
 
 ENTRYPOINT ["java","-jar", "appPS.jar"]
 
-RUN cd target/ 
+WORKDIR target/ 
 
 CMD ["java","-jar", "product-service-0.0.1-SNAPSHOT.jar"]
