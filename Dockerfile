@@ -8,3 +8,6 @@ COPY target/*.jar /appOFF.jar
 
 
 ENTRYPOINT ["java","-jar", "appOFF.jar"]
+
+
+CMD ["mvn", "spring-boot:run"]
