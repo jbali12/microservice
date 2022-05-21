@@ -26,9 +26,8 @@ endpoints:
 eureka:
   instance:
     preferIpAddress: true
-    hostname: eureka
   client:
     registerWithEureka: true
     fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://eureka-0.eureka.default.svc.cluster.local:8761/eureka
+    service-url:
+      default-zone: http://eurekaserver:8761/
