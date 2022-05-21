@@ -22,25 +22,23 @@ endpoints:
     sensitive: false
 
 
-spring:
-  application:
-    name: api-gateway
 eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://eureka:admin@127.0.0.1:8761/eureka/
   instance:
     preferIpAddress: true
-
----
-
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+      
 spring:
   profiles: docker
-  application:
-    name: api-gateway
+  
 eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://eureka:admin@discovery:8761/eureka/
   instance:
     preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    service-url:
+      default-zone: http://eureka:admin@discovery:8761/eureka/  
