@@ -1,15 +1,18 @@
-spring:
-  application:
-    name: eureka-server
- 
 server:
   port: 8761
 
 eureka:
-  client:
+
+    hostname: localhost
+  
+
+---
+
+spring:
+  profiles: docker
+
+eureka:
+ 
+    hostname: eureka-server
     fetch-registry: false
     register-with-eureka: false
-
-
- 
- 
