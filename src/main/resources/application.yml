@@ -1,9 +1,0 @@
-server:
-  port: 8761
-
-eureka:
-
-    hostname: service-registry
-  
-
-
