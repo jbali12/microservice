@@ -14,5 +14,3 @@ spring:
 eureka:
  
     hostname: eureka-server
-    fetch-registry: false
-    register-with-eureka: false
