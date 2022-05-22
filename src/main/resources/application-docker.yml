@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: server-registry
+  zipkin:
+    base-url: http://zipkin:8761
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
