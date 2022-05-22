@@ -3,14 +3,7 @@ server:
 
 eureka:
 
-    hostname: localhost
+    hostname: service-registry
   
 
----
 
-spring:
-  profiles: docker
-
-eureka:
- 
-    hostname: eureka-server
