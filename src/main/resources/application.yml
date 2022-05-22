@@ -30,4 +30,4 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     service-url:
-      default-zone: http://eurekaserver:8761/
+      default-zone: http://eureka-server:8761/eureka
