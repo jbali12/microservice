@@ -5,12 +5,15 @@ spring:
   application:
     name: product-service
   
+endpoints:
+  routes:
+    sensitive: false
+
+
+  
 eureka:
- instance:
-   preferIpAddress: true
-   hostname: eureka-0
- client:
-   registerWithEureka: true
-   fetchRegistry: true
-   service-url:
-     default-zone: http://eureka-0.eureka.default.svc.cluster.local:8761/eureka
+    client:
+        service-url:
+            defaultZone: http://service-registry:8761/eureka
+        fetch-registry: true
+        register-with-eureka: true
