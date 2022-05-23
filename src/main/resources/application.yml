@@ -2,7 +2,7 @@ spring:
   application:
     name: service-registry
   zipkin:
-    base-url: http://service-registry:8761
+    base-url: http://service-registry:8761/eureka/
     
   
 
