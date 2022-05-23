@@ -3,6 +3,8 @@ spring:
     name: service-registry
   zipkin:
     base-url: http://service-registry:8761
+  zipkin:
+    base-url: http://localhost:8761
 
 server:
   port: 8761
