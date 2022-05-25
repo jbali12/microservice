@@ -19,14 +19,7 @@ eureka:
         register-with-eureka: true
   
 rabbitmq:
-    addresses: jdbc:h2:~/product
-    username: root
-    password: root
-    ssl:
-      enabled: false
-    listener:
-      simple:
-        default-requeue-rejected: false
-        retry:
-          enabled: true
-        acknowledge-mode: auto
+    username: guest
+    password: guest
+    host: rabbitmq
+     
