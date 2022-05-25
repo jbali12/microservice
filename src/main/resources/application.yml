@@ -4,7 +4,7 @@ server:
 spring:
   application:
     name: offer-service
-     rabbitmq.host: http://rabbitmq:15672/
+     
   
 eureka:
     client:
