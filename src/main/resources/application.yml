@@ -5,7 +5,6 @@ spring:
   application:
     name: offer-service
     
-spring:
   rabbitmq:
     username: guest
     password: guest
