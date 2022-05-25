@@ -4,6 +4,12 @@ server:
 spring:
   application:
     name: offer-service
+    
+spring:
+  rabbitmq:
+    username: guest
+    password: guest
+    host: http://rabbitmq:15672/
      
   
 eureka:
