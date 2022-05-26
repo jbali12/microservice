@@ -5,9 +5,12 @@ spring:
   application:
     name: product-service
   
-endpoints:
-  routes:
-    sensitive: false
+  rabbitmq:
+    username: guest
+    password: guest
+    host: rabbitmq
+     
+
 
 
   
@@ -18,8 +21,4 @@ eureka:
         fetch-registry: true
         register-with-eureka: true
   
-rabbitmq:
-    username: guest
-    password: guest
-    host: rabbitmq
-     
+
