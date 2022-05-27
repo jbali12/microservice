@@ -1,8 +1,6 @@
 FROM adoptopenjdk/openjdk11:alpine-jre
 
-RUN apk update
-RUN apk search curl
-RUN apk add curl
+RUN apk --no-cache add curl
 
 EXPOSE 8081
 
