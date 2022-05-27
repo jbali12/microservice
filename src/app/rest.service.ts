@@ -5,8 +5,8 @@ import { map, catchError, tap } from 'rxjs/operators';
 import { Product } from './model/product.model';
 import { Router } from '@angular/router';
 
-const productsUrl = 'http://product-service:8081/';
-const offerUrl = 'http://offer-service:8082/';
+const productsUrl = 'http://api-gateway:8000/product-service/products';
+const offerUrl = 'http://api-gateway:8000/offer-service/offer';
 const httpOptions = {
     headers: new HttpHeaders({
       'Content-Type':  'application/json'
