@@ -10,7 +10,7 @@ spring:
       globalcors:
         corsConfigurations:
           '[/**]':
-            allowedOrigins: "http://api-gateway:8000"
+            allowedOrigins: "http://api-gateway:8000/"
             allowedHeaders:
               - content-type
             allowedMethods:
