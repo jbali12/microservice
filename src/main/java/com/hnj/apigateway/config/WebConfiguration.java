@@ -10,7 +10,6 @@ public class WebConfiguration extends WebMvcConfigurerAdapter {
      * @param registry
      */
     @param registry
-    @CrossOrigin    
     @Override
     public void addCorsMappings(final CorsRegistry registry) {
         registry.addMapping("/**");
