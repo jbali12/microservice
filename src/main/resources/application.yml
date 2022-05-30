@@ -5,17 +5,7 @@ spring:
   application:
     name: api-gateway
     
-  cloud:
-    gateway:
-      globalcors:
-        corsConfigurations:
-          '[/**]':
-            allowedOrigins: "http://api-gateway:8000/product-service/products"
-            allowedHeaders:
-              - content-type
-            allowedMethods:
-              - GET
-              - POST
+  
 
 zuul:
   ignoredServices: '*'
