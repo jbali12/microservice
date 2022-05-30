@@ -10,7 +10,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins="http://microservice:3000", allowedHeaders="*")
+@CrossOrigin
 public class OfferController {
 	private OfferService offerService;
 
