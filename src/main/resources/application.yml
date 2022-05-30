@@ -5,7 +5,10 @@ spring:
   application:
     name: api-gateway
     
-  
+  cloud:
+    gateway:
+      globalcors:
+        add-to-simple-url-handler-mapping: true
 
 zuul:
   ignoredServices: '*'
