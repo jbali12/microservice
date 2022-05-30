@@ -9,6 +9,8 @@ public class WebConfiguration extends WebMvcConfigurerAdapter {
      * More info: http://docs.spring.io/spring/docs/current/spring-framework-reference/html/cors.html
      * @param registry
      */
+    @param registry
+    @CrossOrigin    
     @Override
     public void addCorsMappings(final CorsRegistry registry) {
         registry.addMapping("/**");
