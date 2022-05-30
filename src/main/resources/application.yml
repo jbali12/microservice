@@ -7,9 +7,13 @@ spring:
     
   cloud:
     gateway:
-      routes:
-      - id: microservice
-        uri: http://microservice:30000
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "http://microservice:30000"
+            allowedMethods:
+            - GET
+            - POST
 
 zuul:
   ignoredServices: '*'
