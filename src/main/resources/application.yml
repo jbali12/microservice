@@ -10,7 +10,7 @@ spring:
       globalcors:
         corsConfigurations:
           '[/**]':
-            allowedOrigins: "http://microservice:30000"
+            allowedOrigins: "*"
             allowedMethods:
             - GET
             - POST
