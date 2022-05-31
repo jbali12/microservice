@@ -4,6 +4,16 @@ server:
 spring:
   application:
     name: product-service
+    
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+            - GET
+            - POST
   
   rabbitmq:
     username: guest
