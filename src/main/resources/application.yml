@@ -5,6 +5,16 @@ spring:
   application:
     name: offer-service
     
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+            - GET
+            - POST
+    
   rabbitmq:
     username: guest
     password: guest
